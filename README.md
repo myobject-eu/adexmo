@@ -327,16 +327,11 @@ adexmo-spec/
 │   ├── actions-list.md
 │   ├── domains.md
 │   ├── action-definition-checklist.md
+│   ├── contract-based-development.md
+│   ├── from-system-operations-to-actions.md
+│   ├── application-execution-analyst.md
 │   ├── adexmo-vs-oop-vs-functional.md
 │   └── glossary.md
-│
-├── adr/
-│   ├── ADR-000-fastcli-attribute-driven-declarative-cli.md
-│   ├── ADR-001-phpfastcli-php-implementation-of-fastcli.md
-│   ├── ADR-002-pythonfastcli-python-implementation-of-fastcli.md
-│   ├── ADR-003-adexmo-action-driven-execution-model.md
-│   ├── ADR-004-adexmo-actions-list-contract-of-application-behavior.md
-│   └── ADR-005-adexmo-domains-structural-layer-of-the-actions-list.md
 │
 ├── examples/
 │   ├── generic/
@@ -348,7 +343,6 @@ adexmo-spec/
 │   ├── action-definition-template.md
 │   ├── actions-list-template.md
 │   ├── domain-definition-template.md
-│   └── adr-template.md
 │
 └── assets/
     └── diagrams/
@@ -366,6 +360,7 @@ Main documentation:
 - [Actions List](docs/actions-list.md)
 - [Domains](docs/domains.md)
 - [Action Definition Checklist](docs/action-definition-checklist.md)
+- [Contract-Based Development](docs/contract-based-development.md)
 - [ADExMo vs OOP vs Functional Programming](docs/adexmo-vs-oop-vs-functional.md)
 - [Glossary](docs/glossary.md)
 
