@@ -1,6 +1,4 @@
-<div style="background-color: #FFFFFF; text-align: center; margin-left: 30%; margin-right: 30%;">
-  <img src="assets/logo-full.svg" alt="Adexmo" width="300">
-</div>
+![Logo](./assets/logo-full-sm-white.png)
 
 # ADExMo
 **Action-Driven Execution Model**
