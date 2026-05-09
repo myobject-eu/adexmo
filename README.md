@@ -1,5 +1,8 @@
-# ADExMo
+<div style="background-color: #FFFFFF; text-align: center; margin-left: 30%; margin-right: 30%;">
+  <img src="assets/logo-full.svg" alt="Adexmo" width="300">
+</div>
 
+# ADExMo
 **Action-Driven Execution Model**
 
 ADExMo is an architectural execution model where application behavior is defined as executable actions, independent from any specific interface such as HTTP, CLI, UI, or background jobs.
@@ -453,6 +456,16 @@ Recommended license for documentation:
 Creative Commons Attribution-ShareAlike 4.0 International
 CC BY-SA 4.0
 ```
+
+---
+
+## Project Resources
+
+Detailed information about the project management and brand identity:
+
+*   **[Changelog](./CHANGELOG.md)**: Stay updated with the latest changes and releases.
+*   **[Branding Guidelines](assets/BRANDING.md)**: Explore our visual identity and download official assets.
+*   **[Contributing](./CONTRIBUTING.md)**: Learn how to get involved and contribute to Adexmo.
 
 ---
 
