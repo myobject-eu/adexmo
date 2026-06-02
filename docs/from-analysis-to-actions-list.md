@@ -9,7 +9,6 @@ It is not a complete software analysis methodology.
 It does not teach how to write use cases, mindmaps, UML diagrams, wireframes, API specifications, or database schemas.
 
 Its purpose is narrower:
-
 > provide analysts, software architects, and technical teams with a practical path for producing the minimum useful documentation required to define clear, executable, and verifiable ADExMo Actions.
 
 In ADExMo, documentation is not produced for its own sake.
@@ -24,7 +23,7 @@ The Actions List is the central contract of that behavior.
 
 The documentation path described here helps transform early analysis into that contract.
 
-```text
+```
 Basic application documentation
   goals, actors, boundaries, use cases, domains, rules, constraints
         |
@@ -44,7 +43,6 @@ Implementation and integration
 ADExMo does not replace software analysis.
 
 ADExMo gives software analysis a concrete target:
-
 > a clear, structured, versioned, and executable Actions List.
 
 ## Core Rule
@@ -78,23 +76,24 @@ They should not drive it.
 
 ## Overview
 
-| Order | Artifact | Role | Usage |
-|---:|---|---|---|
-| 1 | Goals & Scope Statement | Defines system perimeter | Required |
-| 2 | Glossary | Stabilizes terminology | Required |
-| 3 | Actor Map | Identifies initiators of behavior | Required |
-| 4 | Context Diagram / System Map | Defines external boundaries | Required |
-| 5 | Use Case List | Lists supported operations | Required |
-| 6 | Domain Map | Structures the Actions List | Required |
-| 7 | Business Rules Summary | Collects reusable rules | Recommended |
-| 8 | Use Case Detail | Clarifies non-trivial behavior | Selective |
-| 9 | Sequence Diagrams | Clarify complex interactions | Selective |
-| 10 | State Diagram | Clarifies lifecycle constraints | Selective |
-| 11 | Mindmap | Supports exploration | Optional |
-| 12 | Constraint Summary | Captures constraints affecting Actions | Required |
-| 13 | ADR When Needed | Ratifies important decisions | Selective |
-| 14 | Draft Actions List | First Action contract draft | Required |
-| 15 | Validated Actions List | Final behavioral contract | Required |
+| Order | Artifact                     | Role                                   | Usage       |
+| ----- | ---------------------------- | -------------------------------------- | ----------- |
+| 1     | Goals & Scope Statement      | Defines system perimeter               | Required    |
+| 2     | Glossary                     | Stabilizes terminology                 | Required    |
+| 3     | Actor Map                    | Identifies initiators of behavior      | Required    |
+| 4     | Context Diagram / System Map | Defines external boundaries            | Required    |
+| 5     | Use Case List                | Lists supported operations             | Required    |
+| 6     | Domain Map                   | Structures the Actions List            | Required    |
+| 7     | Business Rules Summary       | Collects reusable rules                | Recommended |
+| 8     | Use Case Detail              | Clarifies non-trivial behavior         | Selective   |
+| 9     | Sequence Diagrams            | Clarify complex interactions           | Selective   |
+| 10    | State Diagram                | Clarifies lifecycle constraints        | Selective   |
+| 11    | Mindmap                      | Supports exploration                   | Optional    |
+| 12    | Constraint Summary           | Captures constraints affecting Actions | Required    |
+| 13    | ADR When Needed              | Ratifies important decisions           | Continuous  |
+| 14    | Analysis Completeness Gate   | Validates readiness before Actions     | Required    |
+| 15    | Draft Actions List           | First Action contract draft            | Required    |
+| 16    | Validated Actions List       | Final behavioral contract              | Required    |
 
 The path is progressive, but not rigid.
 
@@ -103,6 +102,10 @@ Required artifacts should exist for every project.
 Selective artifacts should be produced only when they clarify the Actions List.
 
 Optional artifacts are working tools and should not become authoritative unless explicitly promoted.
+
+**Note on the Glossary:** for systems with an unfamiliar domain, the Glossary may be produced in parallel with artifacts 3 through 5 and consolidated before writing the Domain Map. The important constraint is that terminology is stable before Domains and Actions are named.
+
+**Note on ADRs:** ADRs are not a late-stage activity. They can and should be produced at any point during the analysis when a decision with meaningful alternatives and consequences is made. The position of artifact 13 in this table indicates that ADRs are a continuous tool, not a one-time step before the Draft Actions List.
 
 ---
 
@@ -144,7 +147,7 @@ This artifact helps decide whether a candidate Action belongs to the system.
 
 ## Example Representation
 
-```markdown
+```
 # Goals & Scope Statement
 
 ## Goal
@@ -220,15 +223,15 @@ This artifact stabilizes:
 
 ## Example Representation
 
-```markdown
+```
 # Glossary
 
-| Term | Definition | Notes |
-|---|---|---|
-| Client | Organization served by the accounting firm | Not the same as user |
-| User | Person with access to the system | Can belong to a firm or a client |
-| Request | A document or information request sent to a client | Can have deadlines and status |
-| Practice | Operational work unit managed by the firm | May contain multiple requests |
+| Term    | Definition                                        | Notes                          |
+|---------|---------------------------------------------------|--------------------------------|
+| Client  | Organization served by the accounting firm        | Not the same as user           |
+| User    | Person with access to the system                  | Can belong to a firm or client |
+| Request | A document or information request sent to a client| Can have deadlines and status  |
+| Practice| Operational work unit managed by the firm         | May contain multiple requests  |
 ```
 
 ## Stop Condition
@@ -272,15 +275,15 @@ This artifact helps derive use cases and identify candidate Actions triggered by
 
 ## Example Representation
 
-```markdown
+```
 # Actor Map
 
-| Actor | Type | Responsibility |
-|---|---|---|
-| Firm Admin | Human | Configures users, clients, and permissions |
-| Firm Operator | Human | Creates and manages document requests |
-| Client User | Human | Uploads documents and responds to requests |
-| Notification Service | System | Sends email or system notifications |
+| Actor                | Type   | Responsibility                                         |
+|----------------------|--------|--------------------------------------------------------|
+| Firm Admin           | Human  | Configures users, clients, and permissions             |
+| Firm Operator        | Human  | Creates and manages document requests                  |
+| Client User          | Human  | Uploads documents and responds to requests             |
+| Notification Service | System | Sends email or system notifications                    |
 ```
 
 ## Stop Condition
@@ -328,7 +331,7 @@ This artifact helps avoid Actions that cross system boundaries incorrectly.
 
 ## Example Representation
 
-```text
+```
 [Client User]
      |
      | uploads documents
@@ -393,15 +396,15 @@ This artifact provides the first structured list of behaviors that may later bec
 
 ## Example Representation
 
-```markdown
+```
 # Use Case List
 
-| ID | Actor | Use Case | Expected Result |
-|---|---|---|---|
-| UC-001 | Firm Admin | Create client account | A new client account is available |
-| UC-002 | Firm Operator | Create document request | A request is assigned to a client |
-| UC-003 | Client User | Upload requested document | The document is available to the firm |
-| UC-004 | Firm Operator | Close document request | The request is marked as completed |
+| ID     | Actor         | Use Case                   | Expected Result                          |
+|--------|---------------|----------------------------|------------------------------------------|
+| UC-001 | Firm Admin    | Create client account      | A new client account is available        |
+| UC-002 | Firm Operator | Create document request    | A request is assigned to a client        |
+| UC-003 | Client User   | Upload requested document  | The document is available to the firm    |
+| UC-004 | Firm Operator | Close document request     | The request is marked as completed       |
 ```
 
 ## Stop Condition
@@ -470,7 +473,7 @@ The Domain Map becomes the structural foundation of the Actions List.
 
 ## Example Representation
 
-```markdown
+```
 # Domain Map
 
 ## client
@@ -560,15 +563,15 @@ Rules from this document are later referenced or embedded into Action Definition
 
 ## Example Representation
 
-```markdown
+```
 # Business Rules Summary
 
-| ID | Rule | Domain | Applies To |
-|---|---|---|---|
-| BR-001 | A client account must have a unique tax identifier | client | createClientAccount |
-| BR-002 | A closed request cannot receive new documents | request | closeRequest, uploadDocument |
-| BR-003 | Only firm operators can create document requests | request | createDocumentRequest |
-| BR-004 | A client user can only see requests assigned to its client account | request | listClientRequests |
+| ID     | Rule                                                               | Domain  | Applies To                          |
+|--------|--------------------------------------------------------------------|---------|-------------------------------------|
+| BR-001 | A client account must have a unique tax identifier                 | client  | createClientAccount                 |
+| BR-002 | A closed request cannot receive new documents                      | request | closeRequest, uploadDocument        |
+| BR-003 | Only firm operators can create document requests                   | request | createDocumentRequest               |
+| BR-004 | A client user can only see requests assigned to its client account | request | listClientRequests                  |
 ```
 
 ## Stop Condition
@@ -625,7 +628,7 @@ This artifact helps transform broad use cases into precise candidate Actions.
 
 ## Example Representation
 
-```markdown
+```
 # UC-002 - Create Document Request
 
 ## Actor
@@ -714,7 +717,7 @@ This artifact helps avoid oversized Actions and clarify execution boundaries.
 
 ## Example Representation
 
-```text
+```
 Firm Operator -> System: create document request
 System -> Request Domain: create request
 Request Domain -> Client Domain: verify client is active
@@ -763,7 +766,7 @@ This artifact helps define constraints and rules inside Action Definitions.
 
 ## Example Representation
 
-```text
+```
 Request states:
 
 draft -> open -> completed
@@ -778,7 +781,7 @@ cancelled -> completed
 
 Candidate Actions:
 
-```text
+```
 createDocumentRequest
 publishDocumentRequest
 closeDocumentRequest
@@ -830,7 +833,7 @@ This artifact supports exploration before formalizing the Domain Map and Use Cas
 
 ## Example Representation
 
-```text
+```
 Document Request System
   clients
     create client
@@ -902,7 +905,7 @@ This artifact helps define Action rules, input limits, output expectations, and 
 
 ## Example Representation
 
-```markdown
+```
 # Constraint Summary
 
 ## Business Constraints
@@ -945,6 +948,8 @@ ADR documents should not be created for every small preference.
 
 ADR documents are useful when a decision changes how Actions are defined, grouped, executed, validated, exposed, or versioned.
 
+**ADRs are a continuous tool.** They can be produced at any point during the analysis when a decision with meaningful alternatives and consequences needs to be ratified. The position of this artifact in the table does not mean ADRs are written only at the end of the analysis. A decision made during the Domain Map phase or after a Sequence Diagram is resolved should be recorded immediately in an ADR, not deferred.
+
 ## Before Writing
 
 The team should have:
@@ -968,7 +973,7 @@ ADR documents protect the Actions List from unstable or implicit architectural a
 
 ## Example Representation
 
-```markdown
+```
 # ADR-0003 - Use asynchronous notifications
 
 ## Context
@@ -997,7 +1002,52 @@ Stop when the decision is clear, ratified, and usable by the team.
 
 ---
 
-# 14. Draft Actions List
+# 14. Analysis Completeness Gate
+
+## Purpose
+
+Verify that the analysis is complete and stable before starting the Draft Actions List.
+
+This is a mandatory checkpoint, not a suggestion.
+
+## ADExMo Context
+
+Moving from analysis to the Actions List is not automatic.
+
+Without a deliberate completeness check, the Draft Actions List absorbs unresolved ambiguities, missing rules, unstable Domains, and implicit constraints. These problems are significantly more expensive to fix once Actions are defined.
+
+The gate protects the quality of the Actions List by ensuring that every upstream artifact required to write stable Action contracts is present and ratified.
+
+## Before Passing the Gate
+
+The team must verify:
+
+- Goals & Scope Statement is ratified
+- Glossary covers the terms needed to name Actions and Domains
+- Actor Map identifies all primary initiators of behavior
+- Use Case List covers the main operations to be supported
+- Domain Map is stable and every use case belongs to a Domain
+- Business Rules Summary captures the rules needed to define Action behavior
+- Constraint Summary is ratified
+- All selective artifacts required by the specific project have been produced
+- All open ADRs are ratified or explicitly deferred with documented intent
+- No use case or Domain remains unresolved or ambiguous
+
+## Gate Outcome
+
+If all conditions are satisfied, the team proceeds to the Draft Actions List.
+
+If one or more conditions are not satisfied, the team identifies the missing artifacts and produces them before proceeding.
+
+A team may choose to proceed with known gaps only if that choice is explicitly ratified and documented, stating what is missing and why the decision to proceed is acceptable.
+
+## Action List Contribution
+
+This gate ensures that the Draft Actions List is built on a complete and stable analytical foundation.
+
+---
+
+# 15. Draft Actions List
 
 ## Purpose
 
@@ -1013,7 +1063,7 @@ It is used to validate whether the analysis can be expressed as executable busin
 
 ## Before Writing
 
-The team should have:
+The team should have passed the Analysis Completeness Gate and have:
 
 - Goals & Scope Statement
 - Glossary
@@ -1044,7 +1094,7 @@ It is reviewed, corrected, split, merged, renamed, or rejected before validation
 
 ## Example Representation
 
-```markdown
+```
 # Draft Actions List
 
 ## Domain: request
@@ -1083,7 +1133,7 @@ Stop when every relevant use case is represented by one or more candidate Action
 
 ---
 
-# 15. Validated Actions List
+# 16. Validated Actions List
 
 ## Purpose
 
@@ -1136,7 +1186,7 @@ It becomes the reference for:
 
 ## Example Representation
 
-```markdown
+```
 # ADExMo Actions List
 
 ## Domain: request
@@ -1204,6 +1254,8 @@ The Actions List defines what the system executes.
 
 Downstream artifacts define how that behavior is stored, exposed, displayed, deployed, or integrated.
 
+---
+
 # Relationship with Implementation
 
 After the Actions List is validated, implementation can proceed through any suitable programming paradigm or framework.
@@ -1218,10 +1270,11 @@ Interfaces should invoke Actions.
 
 They should not duplicate business logic.
 
+---
+
 # Summary
 
 ADExMo uses documentation to reach a concrete target:
-
 > the Actions List as the executable contract of application behavior.
 
 This path keeps analysis focused, prevents premature technical design, and gives implementation teams a stable behavioral foundation.
