@@ -1,0 +1,249 @@
+ADExMo Community License 1.0
+
+Copyright (c) 2026 myobject srls.
+All rights reserved except as expressly granted under this License.
+
+1. Purpose
+
+This License governs the use of ADExMo, the Action-Driven Execution Model created and maintained by myobject srls.
+
+ADExMo is made available as a free-to-use architectural and documentation model for designing, documenting, validating, and implementing application behavior through executable actions.
+
+The purpose of this License is to allow broad adoption of ADExMo while preserving:
+
+* the authorship of myobject srls;
+* the integrity of the official ADExMo model;
+* the correct attribution of ADExMo;
+* the official meaning of the ADExMo name;
+* protection against rebranding, misrepresentation, or false claims of ownership.
+
+2. Definitions
+
+For the purposes of this License:
+
+"ADExMo" means the Action-Driven Execution Model, including its concepts, structure, terminology, documentation, ADRs, examples, guidance documents, templates, diagrams, and official specifications created or approved by myobject srls.
+
+"Official ADExMo Materials" means any ADExMo documentation, specification, ADR, template, diagram, source document, example, or related material published or approved by myobject srls as part of the official ADExMo model.
+
+"Implementation" means any software, documentation, workflow, internal process, adapter, runtime, library, tool, product, or project that applies or uses ADExMo without altering the Official ADExMo Materials or presenting itself as an official ADExMo version.
+
+"Modified ADExMo Material" means any edited, extended, translated, renamed, reorganized, derived, or otherwise altered version of the Official ADExMo Materials.
+
+"Official Approval" means prior written approval by myobject srls, including approval given by email, signed document, official repository record, issue comment, pull request approval, or another written channel controlled by myobject srls.
+
+3. Permission to Use
+
+Subject to compliance with this License, myobject srls grants you a worldwide, royalty-free, non-exclusive permission to:
+
+* use ADExMo for personal, internal, educational, professional, research, or commercial purposes;
+* apply ADExMo to software projects, analysis activities, documentation workflows, and architectural design;
+* create software, documentation, adapters, runtimes, tools, tests, templates, or services that implement or support ADExMo;
+* distribute unmodified copies of the Official ADExMo Materials;
+* reference ADExMo in articles, tutorials, documentation, presentations, training materials, and project documents;
+* use ADExMo with artificial intelligence tools, Coding Agents, RAG systems, documentation assistants, code generators, or similar automated systems.
+
+No fee or separate permission is required for normal use of ADExMo, provided that the attribution, integrity, naming, and restriction clauses of this License are respected.
+
+4. Attribution Requirement
+
+Any public use, distribution, documentation, product, service, training material, article, repository, tool, or implementation that substantially incorporates, applies, describes, or reproduces ADExMo must include clear attribution to ADExMo and myobject srls.
+
+The recommended attribution is:
+
+"ADExMo (Action-Driven Execution Model) is an original model created by myobject srls."
+
+Attribution must be reasonably visible in the relevant context, such as a README file, documentation page, license notice, project credits section, training material, or product documentation.
+
+You must not remove, hide, alter, or obscure copyright notices, attribution notices, authorship statements, or license references included in the Official ADExMo Materials.
+
+5. Protection of the ADExMo Name
+
+The name "ADExMo" belongs to myobject srls as the name of the original model.
+
+You may use the ADExMo name only to:
+
+* identify the original model;
+* state that a project, product, document, or tool is based on ADExMo;
+* state that a project, product, document, or tool is compatible with ADExMo;
+* provide proper attribution to myobject srls.
+
+You may not use the ADExMo name in a way that:
+
+* suggests official status, certification, endorsement, sponsorship, or approval by myobject srls without Official Approval;
+* presents a modified or third-party system as the official ADExMo model;
+* creates confusion between official and unofficial materials;
+* uses ADExMo as the main name of a competing product, method, framework, or standard without Official Approval.
+
+Terms such as "official ADExMo", "ADExMo certified", "ADExMo standard", "ADExMo approved", or similar claims may be used only with Official Approval.
+
+6. No Rebranding or Misrepresentation
+
+You may not copy, rename, rebrand, republish, or present ADExMo, the Official ADExMo Materials, or a substantially similar model as your own original system.
+
+You may not:
+
+* remove attribution and present ADExMo as authored by another person or organization;
+* publish ADExMo under a different name as if it were a separate or independent model;
+* incorporate ADExMo into another methodology, framework, or standard while hiding its origin;
+* use the structure, terminology, documentation, or examples of ADExMo to create a confusingly similar competing model without attribution;
+* claim ownership over the ADExMo model, its official documentation, or its official terminology.
+
+7. Modifications, Extensions, Translations, and Integrations
+
+You may apply ADExMo to your own projects and integrate ADExMo-based implementations into your own software, workflows, services, or client work.
+
+However, you may not publish, distribute, or present any Modified ADExMo Material as part of ADExMo, as an official ADExMo version, or as an approved extension of ADExMo without Official Approval.
+
+The following require Official Approval before publication or distribution:
+
+* modified versions of the Official ADExMo Materials;
+* public translations of the Official ADExMo Materials;
+* official-looking extensions of the ADExMo model;
+* alternative ADExMo specifications;
+* modified ADRs presented as ADExMo ADRs;
+* additions to the official ADExMo model, terminology, templates, or documentation path;
+* public materials that imply they are maintained, approved, or endorsed by myobject srls.
+
+Unofficial materials must be clearly identified as unofficial and must preserve attribution to ADExMo and myobject srls.
+
+8. Compatible Implementations
+
+You may create, use, distribute, or sell implementations, adapters, libraries, runtimes, tools, templates, examples, services, or products that are compatible with ADExMo.
+
+Compatible implementations must not:
+
+* modify the official meaning of ADExMo;
+* claim official status without Official Approval;
+* create confusion with Official ADExMo Materials;
+* remove or hide attribution;
+* present compatibility as certification or endorsement.
+
+Acceptable wording includes:
+
+* "based on ADExMo";
+* "compatible with ADExMo";
+* "implements ADExMo concepts";
+* "unofficial ADExMo adapter".
+
+Restricted wording without Official Approval includes:
+
+* "official ADExMo implementation";
+* "ADExMo certified";
+* "approved by myobject srls";
+* "the ADExMo standard" if used to describe an unofficial or modified version.
+
+9. Commercial Use
+
+Commercial use of ADExMo is permitted.
+
+You may use ADExMo in consulting, software development, client projects, internal company workflows, training, architecture documentation, project delivery, and commercial software products.
+
+You may charge for services, software, support, training, or implementation work based on ADExMo.
+
+You may not sell, license, or distribute the Official ADExMo Materials as a standalone product in a way that suggests ownership, official control, or authorship by anyone other than myobject srls.
+
+10. Artificial Intelligence and Automated Systems
+
+You may use ADExMo with artificial intelligence tools, Coding Agents, RAG systems, documentation assistants, code generation tools, model-assisted analysis tools, or similar automated systems.
+
+No separate authorization is required merely because an AI tool uses, references, processes, applies, or helps implement ADExMo.
+
+When AI-assisted use produces public documents, tools, services, training materials, generated specifications, generated code documentation, or other public outputs that substantially incorporate, describe, or apply ADExMo, attribution to ADExMo and myobject srls must be preserved.
+
+You may not use AI tools to:
+
+* remove attribution from ADExMo materials;
+* rebrand ADExMo as another system;
+* generate and publish a confusingly similar competing model without attribution;
+* present AI-generated modifications as Official ADExMo Materials without Official Approval;
+* imply that myobject srls has approved, certified, trained, or endorsed a model, tool, dataset, or generated output without Official Approval.
+
+11. Contributions
+
+Suggestions, corrections, improvements, extensions, examples, translations, or other contributions to ADExMo may be submitted to myobject srls.
+
+By submitting a contribution, you confirm that:
+
+* you have the right to submit it;
+* it does not knowingly infringe third-party rights;
+* myobject srls may review, edit, adapt, accept, reject, publish, or incorporate it into ADExMo;
+* inclusion in the official ADExMo model occurs only after Official Approval by myobject srls.
+
+Unless otherwise agreed in writing, accepted contributions may become part of the Official ADExMo Materials under this License.
+
+12. Reservation of Rights
+
+All rights not expressly granted by this License are reserved by myobject srls.
+
+This License does not grant:
+
+* ownership of ADExMo;
+* ownership of the Official ADExMo Materials;
+* trademark rights beyond the limited naming uses described above;
+* the right to present unofficial materials as official;
+* the right to modify the official ADExMo model without Official Approval;
+* the right to remove attribution or authorship notices.
+
+13. Third-Party Rights
+
+This License applies only to ADExMo and the Official ADExMo Materials owned or controlled by myobject srls.
+
+It does not grant rights to third-party materials, trademarks, software, datasets, libraries, frameworks, or documentation that may be referenced, linked, or used together with ADExMo.
+
+14. Software Components
+
+This License primarily governs the ADExMo model, documentation, specifications, terminology, examples, and related materials.
+
+If myobject srls publishes software components, runtimes, adapters, libraries, or tools under a separate software license, that separate license governs the software component.
+
+If no separate software license is provided, this License governs the ADExMo-related materials, but does not automatically grant additional rights beyond those expressly stated here.
+
+15. No Warranty
+
+ADExMo and the Official ADExMo Materials are provided "as is" and "as available", without warranties of any kind.
+
+myobject srls makes no warranties, express or implied, including but not limited to warranties of accuracy, completeness, fitness for a particular purpose, merchantability, non-infringement, security, legal compliance, business results, or suitability for any specific project.
+
+You are solely responsible for evaluating, applying, implementing, testing, validating, and maintaining any use of ADExMo in your own context.
+
+16. Limitation of Liability
+
+To the maximum extent permitted by applicable law, myobject srls shall not be liable for any direct, indirect, incidental, consequential, special, exemplary, punitive, or business damages arising from or related to the use, misuse, inability to use, interpretation, implementation, modification, or distribution of ADExMo or the Official ADExMo Materials.
+
+This includes, without limitation, loss of data, loss of profits, project failure, implementation errors, business interruption, security incidents, compliance issues, architectural defects, integration failures, or third-party claims.
+
+17. Termination
+
+Your rights under this License terminate automatically if you materially violate its terms.
+
+A material violation includes, without limitation:
+
+* removing attribution;
+* rebranding ADExMo as another system;
+* claiming authorship or ownership of ADExMo;
+* presenting unofficial or modified materials as official;
+* using the ADExMo name in a misleading way;
+* publishing modified ADExMo materials without required Official Approval;
+* falsely claiming endorsement, certification, or approval by myobject srls.
+
+After termination, you must stop the infringing use and, where reasonably possible, remove or correct infringing public materials.
+
+myobject srls may restore permission if the violation is corrected and written confirmation is provided.
+
+18. Governing Law and Jurisdiction
+
+This License is governed by the laws of Italy, without regard to conflict of law principles.
+
+Unless mandatory applicable law provides otherwise, any dispute arising from or related to this License shall be subject to the competent courts of Bolzano/Bozen, Italy.
+
+19. Interpretation
+
+If any provision of this License is held invalid, unenforceable, or ineffective, the remaining provisions remain in effect.
+
+The headings in this License are for convenience only and do not affect interpretation.
+
+The English version of this License is the reference version unless myobject srls expressly publishes another version as controlling.
+
+20. Contact
+
+For approvals, licensing questions, official contributions, or requests related to ADExMo, contact myobject srls through its official communication channels.
