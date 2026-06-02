@@ -219,6 +219,16 @@ There is one execution path.
 
 ---
 
+## From Analysis to Actions
+
+ADExMo is not only an execution model for application logic. It also provides a practical target for software analysis: the Actions List.
+
+Basic documentation such as goals, actors, use cases, domains, rules, and constraints should progressively converge into a clear list of executable business Actions. This keeps analysis focused on what the system must actually do, instead of starting from database schemas, API routes, UI screens, or framework structures.
+
+The recommended path is described in [From Analysis to Actions List](docs/from-analysis-to-actions-list.md).
+
+---
+
 ## Example
 
 ### Define an action
@@ -328,6 +338,7 @@ adexmo-spec/
 │   ├── actions-list.md
 │   ├── domains.md
 │   ├── action-definition-checklist.md
+│   ├── from-analysis-to-actions-list.md
 │   ├── contract-based-development.md
 │   ├── from-system-operations-to-actions.md
 │   ├── application-execution-analyst.md
@@ -361,6 +372,7 @@ Main documentation:
 - [Actions List](docs/actions-list.md)
 - [Domains](docs/domains.md)
 - [Action Definition Checklist](docs/action-definition-checklist.md)
+- [From Analysis to Actions List](docs/from-analysis-to-actions-list.md)
 - [Contract-Based Development](docs/contract-based-development.md)
 - [ADExMo vs OOP vs Functional Programming](docs/adexmo-vs-oop-vs-functional.md)
 - [Glossary](docs/glossary.md)
