@@ -346,15 +346,15 @@ adexmo-spec/
 │   └── glossary.md
 │
 ├── examples/
-│   ├── generic/
-│   │   └── sample-actions-list.md
-│   └── laravel/
-│       └── minimal-setup.md
+│   └── sample-actions-list.md
 │
 ├── templates/
 │   ├── action-definition-template.md
+│   ├── templates/action-definition-template-usage.md
 │   ├── actions-list-template.md
+│   ├── templates/actions-list-template-usage.md
 │   ├── domain-definition-template.md
+│   └── templates/domain-map-template-usage.md
 │
 └── assets/
     └── diagrams/
