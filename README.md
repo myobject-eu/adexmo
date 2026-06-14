@@ -306,6 +306,18 @@ ADExMo can be implemented using different languages, frameworks, and programming
 
 ---
 
+## ADExMo Skill
+
+This repository can be used as an ADExMo Action Modeling Skill for Coding Agents.
+
+The root `SKILL.md` defines how a Coding Agent should use ADExMo to produce Domains, Action Definitions, and a validated Actions List.
+
+ADExMo Skill produces the behavioral contract.
+
+It does not implement application code.
+
+---
+
 ## Relation to FastCLI
 
 FastCLI is a CLI adapter concept related to ADExMo.
@@ -330,6 +342,7 @@ adexmo-spec/
 ├── LICENSE
 ├── CHANGELOG.md
 ├── CONTRIBUTING.md
+├── SKILLS.md
 │
 ├── docs/
 │   ├── introduction.md
