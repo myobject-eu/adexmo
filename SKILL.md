@@ -1,8 +1,7 @@
 ---
-
-name: adexmo-action-modeling
+name: adexmo
 description: Use this skill to transform application analysis into ADExMo Domains, Actions, Action Definitions, and a validated Actions List. This skill models executable business behavior. It does not implement application code.
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
 
 # ADExMo Action Modeling Skill
 
